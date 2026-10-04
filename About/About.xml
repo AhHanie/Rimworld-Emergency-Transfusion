@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Emergency Trasnfusion</name>
+    <author>Sk</author>
+    <packageId>sk.emergencytransfusion</packageId>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <description>Adds a "Stabilize with hemogen" order to the right-click menu of a drafted colonist when the clicked pawn is suffering from blood loss. The colonist uses one hemogen pack from their own inventory, or fetches the closest reachable, then applies it in about one second. This reduces blood loss by the same amount as one pack in a surgical blood transfusion (35%), much faster than surgery or tending. The order is manual only. It only changes the blood loss condition: wounds stay open and keep bleeding, so the patient may still need normal tending afterwards.</description>
+    <modVersion>1.0.0</modVersion>
+    <url>https://steamcommunity.com/sharedfiles/filedetails/?id=3813222696</url>
+    <modDependencies>
+        <li>
+            <packageId>Ludeon.RimWorld.Biotech</packageId>
+            <displayName>Biotech</displayName>
+            <steamWorkshopUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech/</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+</ModMetaData>

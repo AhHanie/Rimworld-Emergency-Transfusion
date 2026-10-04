@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <ET_StabilizeWithHemogen>Stabilize {0} with hemogen</ET_StabilizeWithHemogen>
+    <ET_CannotStabilizeWithHemogen>Cannot stabilize {0} with hemogen</ET_CannotStabilizeWithHemogen>
+    <ET_NoHemogenPack>no hemogen pack available</ET_NoHemogenPack>
+</LanguageData>
