@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Targets: A = patient, B = hemogen pack. Ordered manually from the drafted right-click menu only. -->
+  <JobDef>
+    <defName>ET_StabilizeWithHemogen</defName>
+    <driverClass>Emergency_Trasnfusion.JobDriver_StabilizeWithHemogen</driverClass>
+    <reportString>stabilizing TargetA with hemogen.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <suspendable>false</suspendable>
+  </JobDef>
+
+</Defs>

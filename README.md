@@ -10,14 +10,23 @@ The pack comes from the colonist's own inventory, or from the closest reachable,
 
 ## Building from source
 
-The mod source lives under `1.6/source/` as a .NET SDK project targeting net472:
+Each supported RimWorld version has its own project under `<version>/source/`. Build the one you need, and the DLL is written to that version's `Assemblies/` folder.
+
+**1.7** (net10.0). Requires an installed RimWorld 1.7, because the project references the game's `Assembly-CSharp.dll` and `UnityStubs.dll`:
 
 ```
-cd "1.6/source"
-dotnet build -c Release
+dotnet build "1.7/source/Emergency Trasnfusion.csproj" -c Release
 ```
 
-The compiled DLL is written to `1.6/Assemblies/Emergency Trasnfusion.dll`. A working Rimworld install isn't required to build - `Krafs.Rimworld.Ref` provides stub reference assemblies via NuGet.
+The game folder defaults to `C:\Program Files (x86)\Steam\steamapps\common\RimWorld`. Override it with `-p:RimWorldDir="D:\Games\RimWorld"`. The output is `1.7/Assemblies/Emergency Trasnfusion.dll`.
+
+**1.6** (net472). A RimWorld install isn't required - `Krafs.Rimworld.Ref` provides stub reference assemblies via NuGet:
+
+```
+dotnet build "1.6/source/Emergency Trasnfusion.csproj" -c Release
+```
+
+The output is `1.6/Assemblies/Emergency Trasnfusion.dll`.
 
 ## License
 
